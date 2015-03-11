@@ -1,0 +1,31 @@
+float alpha = 0;
+	float alpha1;
+	float x_1 = 50;
+	float y_1 = 50;
+	float x_0, y_0;
+	
+	while(1)
+	{
+		if (alpha > 360){
+			alpha = 0;
+			x_1 = 50;
+			y_1 = 50;
+		}
+		
+		alpha1 = (alpha*PI)/180;
+		
+		x_0 = x_1;
+		y_0 = y_1;
+		
+		x_1 = x_0*cosf(alpha1) - y_0*sinf(alpha1); //get new x coord
+		y_1 = x_0*sinf(alpha1) + y_0*cosf(alpha1); //get new y coord
+		alpha = alpha + 1;
+		
+		
+		//red line
+		draw_line(x(0),y(0),x(x_0),y(y_0),WHITE); //erase old line
+		draw_line(x(0),y(0),x(x_1),y(y_1),RED); //draw new line
+
+		gpu_sync(); //wait for next 1/60th
+	}
+	

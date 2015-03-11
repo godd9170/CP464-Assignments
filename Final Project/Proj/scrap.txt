@@ -1,0 +1,12 @@
+	
+	while( counter < 120){
+		y = 240 - (counter+5);
+		draw_line(counter,240,counter,y,0xf800);
+		counter++;
+	}
+	while( counter > 0){
+		y = 240 - (counter+5);
+		draw_line((320-counter),240,(320-counter),y,0xf800);
+		counter--;
+	}
+	

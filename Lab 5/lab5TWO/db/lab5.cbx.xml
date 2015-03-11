@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lab5">
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab5_henry|lab5:u0|lab5_nios2_qsys_0:nios2_qsys_0|lab5_nios2_qsys_0_ic_data_module:lab5_nios2_qsys_0_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_qed1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab5_henry|lab5:u0|lab5_nios2_qsys_0:nios2_qsys_0|lab5_nios2_qsys_0_ic_tag_module:lab5_nios2_qsys_0_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_0ah1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab5_henry|lab5:u0|lab5_nios2_qsys_0:nios2_qsys_0|lab5_nios2_qsys_0_nios2_oci:the_lab5_nios2_qsys_0_nios2_oci|lab5_nios2_qsys_0_nios2_oci_im:the_lab5_nios2_qsys_0_nios2_oci_im|lab5_nios2_qsys_0_traceram_lpm_dram_bdp_component_module:lab5_nios2_qsys_0_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_e502.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab5_henry|lab5:u0|lab5_nios2_qsys_0:nios2_qsys_0|lab5_nios2_qsys_0_nios2_oci:the_lab5_nios2_qsys_0_nios2_oci|lab5_nios2_qsys_0_nios2_ocimem:the_lab5_nios2_qsys_0_nios2_ocimem|lab5_nios2_qsys_0_ociram_sp_ram_module:lab5_nios2_qsys_0_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_os71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab5_henry|lab5:u0|lab5_nios2_qsys_0:nios2_qsys_0|lab5_nios2_qsys_0_register_bank_a_module:lab5_nios2_qsys_0_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_70h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab5_henry|lab5:u0|lab5_nios2_qsys_0:nios2_qsys_0|lab5_nios2_qsys_0_register_bank_b_module:lab5_nios2_qsys_0_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_80h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab5_henry|lab5:u0|lab5_nios2_qsys_0:nios2_qsys_0|lpm_add_sub:Add8" CBX_FILE_NAME="add_sub_8ri.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab5_henry|lab5:u0|lab5_onchip_memory2_0:onchip_memory2_0|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_cic1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

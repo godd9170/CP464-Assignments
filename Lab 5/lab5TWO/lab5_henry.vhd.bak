@@ -1,0 +1,47 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_arith.all;
+USE ieee.std_logic_unsigned.all;
+
+
+entity lab5_henry is
+	port (
+		CLOCK_50            : in  std_logic                     := 'X';             -- clk
+		KEY		        	: in  std_logic_vector(1 downto 0);          -- KEY buttons
+		SW					: in  std_logic_vector(7 downto 0)  := (others => 'X'); -- export
+		LEDR				: out std_logic_vector(15 downto 0);                    -- export
+		LEDG				: out std_logic_vector(7 downto 0);
+		HEX					: out std_logic_vector(31 downto 0)                    -- export
+		);
+		
+end entity lab5_henry;
+
+
+architecture structure of lab5_henry is
+
+component lab5_henry is
+        port (
+            clk_clk           : in  std_logic                     := 'X';             -- clk
+            reset_reset_n     : in  std_logic                     := 'X';             -- reset_n
+            sliders_export    : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- export
+            green_leds_export : out std_logic_vector(7 downto 0);                     -- export
+            red_leds_export   : out std_logic_vector(15 downto 0);                    -- export
+            hex_export        : out std_logic_vector(31 downto 0);                    -- export
+            pushbutton_export : in  std_logic                     := 'X'              -- export
+        );
+    end component lab5_henry;
+begin
+    u0 : component lab5_henry
+        port map (
+            clk_clk           => CONNECTED_TO_clk_clk,           --        clk.clk
+            reset_reset_n     => CONNECTED_TO_reset_reset_n,     --      reset.reset_n
+            sliders_export    => CONNECTED_TO_sliders_export,    --    sliders.export
+            green_leds_export => CONNECTED_TO_green_leds_export, -- green_leds.export
+            red_leds_export   => CONNECTED_TO_red_leds_export,   --   red_leds.export
+            hex_export        => CONNECTED_TO_hex_export,        --        hex.export
+            pushbutton_export => CONNECTED_TO_pushbutton_export  -- pushbutton.export
+        );
+
+	  
+end structure;
+

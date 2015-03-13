@@ -9,11 +9,11 @@
         <processor JTAGHubInstanceID="0">CPU</processor>
         <elf_section name="text">
             <memory_device>SDRAM/s1</memory_device>
-            <memory_start_offset>0</memory_start_offset>
+            <memory_start_offset>4096</memory_start_offset>
         </elf_section>
         <elf_section name="data">
             <memory_device>SDRAM/s1</memory_device>
-            <memory_start_offset>0</memory_start_offset>
+            <memory_start_offset>4096</memory_start_offset>
         </elf_section>
         <terminal JTAGHubInstanceID="0">JTAG_UART</terminal>
     </system>
@@ -26,6 +26,7 @@
                 <source_file filepath="true">main.c</source_file>
                 <source_file filepath="true">VGA.c</source_file>
                 <source_file filepath="true">VGA.h</source_file>
+                <source_file filepath="true">exceptions.c</source_file>
             </source_files>
             <compiler_flags>-g -O1 -ffunction-sections -fverbose-asm -fno-inline</compiler_flags>
             <emulate_unimpl_instructions>true</emulate_unimpl_instructions>

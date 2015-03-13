@@ -93,10 +93,6 @@ void the_exception (void)
 }
 
 
-/*
-* Interrupt functionality. Determines if the pushbutton was the cause
-* of the interrupt. If so, it calls the interrupt functionality (hex_update).
-*/
 void INT_HANDLER()
 {
   int ipending;
